@@ -1,20 +1,21 @@
 package Composant;
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 public abstract class Circuit extends Composant{
 
-    protected Array<Composant> composants;
+    protected ArrayList<Composant> composants;
 
-    public Circuit(Array<Composant> composants){
+    public Circuit(ArrayList<Composant> composants){
         setComposants(composants);
     }
 
-    public Array<Composant> getComposants() {
+    public ArrayList<Composant> getComposants() {
         return composants;
     }
 
-    public void setComposants(Array<Composant> composants) {
+    public void setComposants(ArrayList<Composant> composants) {
         this.composants = composants;
     }
 }
