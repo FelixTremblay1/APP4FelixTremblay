@@ -22,7 +22,7 @@ public class CircuitApp {
         CircuitBuilder cirBuild = new CircuitBuilder();
         do {
             System.out.println("Voici les fichiers jason disponibles pour la consultation.");
-            String dir = System.getProperty("user.dir") + FSep + "src" + FSep + "donnees" + FSep + "fichiers_json";
+            String dir = System.getProperty("user.dir") + FSep + "APP4FelixTremblay"+ FSep + "src" + FSep + "donnees" + FSep + "fichiers_json";
             try {
                 List<Path> paths = Files.walk(Paths.get(dir), 1)
                         .filter(Files::isRegularFile)
