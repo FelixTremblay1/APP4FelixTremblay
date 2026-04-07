@@ -37,7 +37,7 @@ public class CircuitApp {
                     if (i + 1 == choix) {
                         Composant composantSelectionne = cirBuild.construireCircuit(paths.get(i).toString());
                         System.out.println();
-                        System.out.println("La résistance équivalent calculé du dossier "+ paths.get(i).getFileName().toString() +" est : " + composantSelectionne.calculerResistance());
+                        System.out.println("La résistance équivalente calculé du dossier "+ paths.get(i).getFileName().toString() +" est : " + composantSelectionne.calculerResistance());
                     }
                 }
             } catch (Exception e) {
@@ -51,7 +51,7 @@ public class CircuitApp {
             }
 
         } while (exit);
-        System.out.println("L'application a été arreté.");
+        System.out.println("L'application a été arretée.");
     }
 
     private int getNumber(int valeurMin, int valeurMax) {
