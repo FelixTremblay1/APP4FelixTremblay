@@ -56,7 +56,6 @@ public class CircuitApp {
 
     private int getNumber(int valeurMin, int valeurMax) {
         Scanner sc = new Scanner(System.in);
-        do {
             try {
                 int number = sc.nextInt();
                 if (number < valeurMin || number > valeurMax) {
@@ -67,8 +66,5 @@ public class CircuitApp {
                 System.out.println("Cela n'est pas un choix valide. Veuillez prendre un numéro entre " + valeurMin + " et " + valeurMax + " inclusivement.");
                 return getNumber(valeurMin, valeurMax);
             }
-
-        } while (true);
-
     }
 }
